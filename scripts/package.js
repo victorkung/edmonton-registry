@@ -10,6 +10,10 @@ var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navig
 jQuery(function($) {
     'use strict';
 
+    // Global Header - Dropdown
+    $(".has-dropdown").hover( function() {
+      $(".dropdown-menu").slideToggle();
+    });
 
 });
 

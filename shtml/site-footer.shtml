@@ -1,1 +1,97 @@
-<h1>This is the footer</h1>
+<footer>
+  <div class="footer-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 social-media-icons">
+          <a href="#"><img src="/images/footer/linkedin-icon.png" alt="linkedin" width="30"></a>
+          <a href="#"><img src="/images/footer/facebook-icon.png" alt="linkedin" width="30"></a>
+          <a href="#"><img src="/images/footer/twitter-icon.png" alt="linkedin" width="30"></a>
+        </div>
+        
+        <div class="col-xs-12 col-sm-2">
+          <ul>
+            <li><strong><a href="#">ABOUT US</a></strong></li>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-8">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <ul>
+                <li><strong><a href="#">ONLINE FORMS</a></strong></li>
+                <li><a href="#">Road Test Booking</a></li>
+                <li><a href="#">Vehicle Information Report</a></li>
+                <li><a href="#">License Plate Renewal</a></li>
+                <li><a href="#">File Annual Return</a></li>
+                <li><a href="#">Corporate Registry Search</a></li>
+                <li><a href="#">NUANS Reports</a></li>
+                <li><a href="#">Download PDF Forms</a></li>
+              </ul>       
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <ul>
+                <li><strong><a href="#">REGISTRY SERVICES</a></strong></li>
+                <li><a href="#">Driver's License</a></li>
+                <li><a href="#">Vehicle Registration</a></li>
+                <li><a href="#">Corporate Registry</a></li>
+                <li><a href="#">Vital Statistics</a></li>
+                <li><a href="#">Searches & Liens</a></li>
+                <li><a href="#">Additional Services</a></li>
+                <li><a href="#">Alberta Health</a></li>
+                <li><a href="#">Organ Donor</a></li>
+              </ul>            
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <ul>
+                <li><strong><a href="#">LOCATIONS</a></strong></li>
+                <li>
+                  <span>North East Registry</span>
+                  <br>
+                  13058 – 50 Street<br>
+                  Edmonton, AB<br>
+                  Tel (780) 473-8899<br>
+                </li>
+
+                <li>
+                  <span>North Central Registry</span>
+                  <br>
+                  12804 – 82 Street<br>
+                  Edmonton, AB<br>
+                  Tel (780) 478-8832<br>
+                </li>
+
+                <li>
+                  <span>South Side Registry</span>
+                  <br>
+                  9941 – 63 Ave.<br>
+                  Edmonton, AB <br>
+                  Tel (780) 437-6630<br>
+                </li>
+
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="row">
+      <div class="container">
+        <div class="col-xs-12">
+          <cite>&copy; 2017 edmontonregistry.com. All rights reserved. Alberta Registry Services & Registry Information. Edmonton, AB. 1-888-919-7623.</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>

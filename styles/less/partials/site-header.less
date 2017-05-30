@@ -1,0 +1,136 @@
+header {
+  width: 100%;
+
+  .top-line, .header-nav {
+    padding: 15px 0;
+  }
+
+  // Top Header
+  .top-line {
+    min-height: 80px;
+    background: #005579;
+  }
+
+  .icons {
+    margin-right: 10px;
+  }
+
+  .phone-number {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    position: relative;
+    top: -11px;
+  }
+
+  .alberta-logo, .search-form {
+    float: right;
+  }
+
+  .alberta-logo {
+    margin-right: 25px;
+  }
+
+  .search-form {
+    position: relative;
+    top: 10px;
+  }
+
+  .search-form input {
+    border-radius: 3px;
+    border: 0;
+    width: 175px;
+    padding: 10px 10px 10px 35px;
+    background-color: rgba(30, 166, 208, 0.5);
+    background-image: url(/images/header/icon_search.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px 6px;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+    color: white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    color: white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+    color: white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 14px;
+    color: white;
+  }
+
+
+  // Header Navigation
+  .header-nav {
+    min-height: 90px;
+    background: #fff;
+    border-bottom: 2px solid #eee;
+
+    nav {
+      position: relative;
+      top: 21px;
+      text-align: right;
+    }
+  
+    li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    a {
+      color: #45474d;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 1s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    i {
+      position: relative;
+      top: -1px;
+      color: #9f9f9f;
+      font-weight: normal;
+    }
+
+  }
+
+  .dropdown-menu {
+    display: none;
+    width: 100%;
+    background: white;
+    padding: 30px 0 50px 0;
+    font-size: 14px;
+
+    p {
+      width: 100%;
+      border-bottom: 2px solid #666;
+      font-weight: bold;
+      padding: 0px 10px 7.5px 10px;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    li {
+      list-style: none;
+      margin-top: 12.5px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 /*
   HTML5 Reset :: style.css
   ----------------------------------------------------------
@@ -273,6 +274,12 @@ nav ul {
 }
 nav li {
   background-image: none;
+}
+img {
+  max-width: 100%;
+}
+body * {
+  font-family: 'Lato', sans-serif;
 }
 @charset "UTF-8";
 /*!
@@ -3238,4 +3245,163 @@ nav li {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+header {
+  width: 100%;
+}
+header .top-line,
+header .header-nav {
+  padding: 15px 0;
+}
+header .top-line {
+  min-height: 80px;
+  background: #005579;
+}
+header .icons {
+  margin-right: 10px;
+}
+header .phone-number {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+  top: -11px;
+}
+header .alberta-logo,
+header .search-form {
+  float: right;
+}
+header .alberta-logo {
+  margin-right: 25px;
+}
+header .search-form {
+  position: relative;
+  top: 10px;
+}
+header .search-form input {
+  border-radius: 3px;
+  border: 0;
+  width: 175px;
+  padding: 10px 10px 10px 35px;
+  background-color: rgba(30, 166, 208, 0.5);
+  background-image: url(/images/header/icon_search.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 5px 6px;
+}
+header ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 14px;
+  color: white;
+}
+header ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 14px;
+  color: white;
+}
+header :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 14px;
+  color: white;
+}
+header :-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 14px;
+  color: white;
+}
+header .header-nav {
+  min-height: 90px;
+  background: #fff;
+  border-bottom: 2px solid #eee;
+}
+header .header-nav nav {
+  position: relative;
+  top: 21px;
+  text-align: right;
+}
+header .header-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+header .header-nav a {
+  color: #45474d;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 1s ease;
+}
+header .header-nav a:hover {
+  opacity: 0.7;
+}
+header .header-nav i {
+  position: relative;
+  top: -1px;
+  color: #9f9f9f;
+  font-weight: normal;
+}
+header .dropdown-menu {
+  display: none;
+  width: 100%;
+  background: white;
+  padding: 30px 0 50px 0;
+  font-size: 14px;
+}
+header .dropdown-menu p {
+  width: 100%;
+  border-bottom: 2px solid #666;
+  font-weight: bold;
+  padding: 0px 10px 7.5px 10px;
+}
+header .dropdown-menu ul {
+  padding-left: 25px;
+}
+header .dropdown-menu li {
+  list-style: none;
+  margin-top: 12.5px;
+}
+header .dropdown-menu a:hover {
+  text-decoration: underline;
+}
+footer {
+  width: 100%;
+}
+footer .footer-nav {
+  background: #11678c;
+  padding: 75px 0;
+}
+footer p,
+footer li,
+footer a {
+  color: white;
+}
+footer a:hover {
+  opacity: 0.6;
+  transition: all 1s ease;
+}
+footer .social-media-icons a {
+  margin-right: 10px;
+}
+footer .social-media-icons a:last-of-type {
+  margin-right: 0;
+}
+footer li {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+footer li > a,
+footer li span {
+  color: #3fa3c9;
+  font-weight: bold;
+}
+footer .footer-bottom {
+  color: white;
+  background: #015982;
+  padding: 75px 0;
+  text-align: center;
+}
+footer .footer-bottom cite {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
 }

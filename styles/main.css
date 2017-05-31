@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i, 900, 900i');
 /*
   HTML5 Reset :: style.css
   ----------------------------------------------------------
@@ -279,7 +279,24 @@ img {
   max-width: 100%;
 }
 body * {
+  font-weight: normal;
   font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 46px;
+  font-weight: 300;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+}
+h4 {
+  font-size: 20px;
+  font-weight: bold;
 }
 @charset "UTF-8";
 /*!
@@ -3246,6 +3263,27 @@ body * {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+.vertical-align {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+a.btn {
+  font-size: 20px;
+  padding: 10px 27.5px;
+  border-radius: 10px;
+}
+a.btn-orange {
+  color: white;
+  background-color: #ff7c00;
+}
+a.btn-white {
+  background-color: white;
+}
+a.btn-blue {
+  color: white;
+  background-color: #0081b7;
+}
 header {
   width: 100%;
 }
@@ -3341,11 +3379,13 @@ header .header-nav i {
   font-weight: normal;
 }
 header .dropdown-menu {
+  position: absolute;
   display: none;
   width: 100%;
   background: white;
   padding: 30px 0 50px 0;
   font-size: 14px;
+  z-index: 100;
 }
 header .dropdown-menu p {
   width: 100%;
@@ -3404,4 +3444,137 @@ footer .footer-bottom cite {
   font-style: normal;
   font-size: 14px;
   font-weight: bold;
+}
+.home .hero {
+  width: 100%;
+  background: url(/images/home/home-hero.jpg) center center no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: white;
+}
+.home .hero h1 {
+  margin-bottom: 20px;
+}
+.home .hero p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.home .locations {
+  color: white;
+  text-align: center;
+  background: #0081b7;
+  padding: 100px 0 150px;
+}
+.home .locations h4 {
+  margin: 15px 0;
+}
+.home .locations .location-details {
+  margin-top: 100px;
+}
+.home .locations .location-details p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.home .locations .location-contact {
+  margin-top: 10px;
+}
+.home .orange-callout {
+  color: white;
+  text-align: center;
+  background: #ff7c00;
+  padding: 45px 0;
+}
+.home .orange-callout h3 {
+  margin-bottom: 5px;
+}
+.home .orange-callout p {
+  font-size: 24px;
+}
+.home .service-offerings {
+  padding: 100px 0;
+  text-align: center;
+}
+.home .service-offerings .service-row {
+  margin-bottom: 100px;
+}
+.home .service-offerings h2,
+.home .service-offerings a.learn-more {
+  color: #0081b7;
+}
+.home .service-offerings a.learn-more {
+  font-size: 16px;
+  font-weight: 300;
+}
+.home .service-offerings h2 {
+  margin-bottom: 100px;
+}
+.home .service-offerings h4 {
+  margin-bottom: 20px;
+}
+.home .service-offerings img {
+  width: 75px;
+  margin-bottom: 50px;
+}
+.home .service-offerings p {
+  margin-bottom: 20px;
+}
+.home .two-col-layout {
+  color: white;
+  min-height: 500px;
+  clear: both;
+}
+.home .two-col-layout .col {
+  float: left;
+  width: 50%;
+  min-height: 500px;
+}
+.home .two-col-layout .bg-image {
+  background: url(/images/home/customer_support.jpg) center center no-repeat;
+  background-size: cover;
+}
+.home .two-col-layout .col-content {
+  padding: 50px;
+  background: #0081b7;
+}
+.home .two-col-layout h2 {
+  margin-bottom: 25px;
+}
+.home .two-col-layout img {
+  width: 25px;
+  position: relative;
+  top: 6px;
+  margin-right: 15px;
+}
+.home .two-col-layout p {
+  margin-bottom: 10px;
+}
+.home .testimonial {
+  padding: 100px 0;
+}
+.home .testimonial blockquote {
+  padding: 42.5px;
+  background-image: url(/images/home/quote-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.home .testimonial q {
+  display: block;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  color: #4ba3cb;
+  margin-bottom: 20px;
+}
+.home .testimonial cite {
+  display: block;
+  text-align: right;
+  color: #99999f;
+  font-style: normal;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .home .two-col-layout .col {
+    width: 100%;
+  }
 }

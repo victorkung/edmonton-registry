@@ -1,9 +1,9 @@
 .home {
   .hero {
     width: 100%;
-    background: url(/images/home/home-hero.jpg) center center no-repeat;
+    background: url('../images/home/home-hero.jpg') center center no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 700px;
     color: white;
 
     h1 {
@@ -14,6 +14,35 @@
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 40px;
+    }
+
+    .btn-orange {
+      margin-right: 15px;
+    }
+
+  }
+
+  .post-hero {
+    padding: 50px 0;
+
+    .left-col {
+      margin-top: 10px;
+
+      a {
+        display: inline-block; 
+        font-size: 14px; 
+        font-weight: 600; 
+        color: #666; 
+      }
+    }
+
+    .right-col {
+      text-align: right;
+
+      .btn-orange {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
     }
 
   }
@@ -49,8 +78,8 @@
     background: #ff7c00;
     padding: 45px 0;
 
-    h3 {
-      margin-bottom: 5px;
+    h2 {
+      margin-bottom: 15px;
     }
 
     p {
@@ -62,7 +91,7 @@
     padding: 100px 0;
     text-align: center;
 
-    .service-row {
+    .service {
       margin-bottom: 100px;
     }
 
@@ -95,17 +124,17 @@
 
   .two-col-layout {
     color: white;
-    min-height: 500px;
+    height: 500px;
     clear: both;
 
     .col {
       float: left;
       width: 50%;
-      min-height: 500px;
+      height: 500px;
     }
 
     .bg-image {
-      background: url(/images/home/customer_support.jpg) center center no-repeat;
+      background: url('../images/home/customer_support.jpg') center center no-repeat;
       background-size: cover;
     }
 
@@ -131,11 +160,16 @@
   }
 
   .testimonial {
-    padding: 100px 0;
+    padding: 100px 0 50px;
+
+    .testimonial-wrapper {
+      max-width: 1000px; 
+      margin: 0 auto;
+    }
 
     blockquote {
       padding: 42.5px;
-      background-image: url(/images/home/quote-icon.png);
+      background-image: url('../images/home/quote-icon.png');
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -156,17 +190,93 @@
       font-style: normal;
       font-size: 18px;
     }
+
+    .slick-dots {
+      position: relative;
+      bottom: initial;
+      margin-top: 50px;
+    }
   }
 
 }
 
 
 // Media Queries
+@media screen and (max-width: 900px) {
+  .home {
+    .two-col-layout { 
+      h2 {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 768px) {
 .home {
+  .hero {
+    text-align: center;
+  }
+
   .two-col-layout .col {
     width: 100%;
   }
+
+  .post-hero {
+    padding: 50px 0;
+
+    .left-col, .right-col {
+      text-align: center;
+    }
+
+    .left-col {
+      margin-bottom: 25px;
+    }
+  }
+
+  .locations {
+    .location-col {
+      margin-bottom: 100px;
+    }
+  }
+
+  .two-col-layout {
+    height: auto;
+
+    .col {
+      height: auto;
+    }
+
+    .bg-image {
+      display: none;
+    }
+  }
+
 }
 }
+
+
+// Media Queries
+@media screen and (max-width: 450px) {
+.home {
+  .hero {
+    .btn-orange {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .post-hero {
+    .left-col {
+      a { 
+        margin-right: 0 !important; 
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+}
+
+
 

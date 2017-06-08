@@ -1,4 +1,6 @@
 <header>
+
+  <!-- Top Banner -->
   <div class="top-line row">
     <div class="container">
       <div class="col-xs-6 col-sm-6">
@@ -16,20 +18,25 @@
       </div>
     </div>
   </div>
-    
+  
+
+  <!-- Header Navigation -->
   <div class="header-nav row">
     <div class="container">
-      <div class="col-xs-12 col-sm-3">
+      <div class="col-xs-6 col-sm-3">
         <img src="images/header/in-out-logo.png" alt="In and Out Logo" class="in-out-logo" width="200">
       </div>
-      <div class="col-xs-12 col-sm-9">
-        <nav>
+      <div class="col-xs-6 col-sm-9">
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="mobile-hide">
           <ul>
             <li class="has-dropdown" id="drivers-license">
               <a href="#">Driver's License <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
             </li>
             
-            <li class="has-dropdown" d="vehicle-reg">
+            <li class="has-dropdown" id="vehicle-reg">
               <a href="#">Vehicle Registration <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             </li>
 
@@ -44,15 +51,20 @@
             </li>
           </ul>
         </nav>
+
+        <!-- Mobile Menu Trigger -->
+        <a href="#" class="mobile-show" id="mobile-menu-trigger"><img src="images/header/menu-icon.png" alt="" width="35"></a>
       </div>
     </div>
   </div>
 
+
+  <!-- Desktop Dropdown Menu -->
   <div class="dropdown-menu">
     <div class="container">
 
-      <!-- Driver's License Dropdown -->
-      <div class="row" id="drivers-license-dropdown">
+      <!-- Drivers License -->
+      <div class="row dropdown-content" id="drivers-license-dropdown">
 
         <!-- Left Column -->
         <div class="col-xs-12 col-sm-5">
@@ -98,8 +110,209 @@
           </div>
         </div>
       </div>
+
+
+      <!-- Vehicle Registration Dropdown -->
+      <div class="row dropdown-content" id="vehicle-reg-dropdown">
+
+        <!-- Left Column -->
+        <div class="col-xs-12 col-sm-5">
+          <p>Vehicle Registration Left Column</p>
+
+          <div class="row">
+            <ul class="col-xs-12">
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-xs-12 col-sm-7">
+          <p>Vehicle Registration Right Column</p>
+
+         <div class="row">
+            <ul class="col-xs-12">
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Vital Stats Dropdown -->
+      <div class="row dropdown-content" id="vital-stats-dropdown">
+
+        <!-- Left Column -->
+        <div class="col-xs-12 col-sm-5">
+          <p>Vital Statistics Left Column</p>
+
+          <div class="row">
+            <ul class="col-xs-12">
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-xs-12 col-sm-7">
+          <p>Vital Statistics Right Column</p>
+
+         <div class="row">
+            <ul class="col-xs-12">
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Other Services Dropdown -->
+      <div class="row dropdown-content" id="other-services-dropdown">
+
+        <!-- Left Column -->
+        <div class="col-xs-12 col-sm-5">
+          <p>Other Services Left Column</p>
+
+          <div class="row">
+            <ul class="col-xs-12">
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-xs-12 col-sm-7">
+          <p>Other Services Right Column</p>
+
+         <div class="row">
+            <ul class="col-xs-12">
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
+
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-nav">
+    <ul>
+      <li style="text-align: right;">
+        <a href="#" id="mobile-menu-close"><img src="images/header/close-icon.png" alt="" width="35"></a>
+      </li>
+      
+
+      <!-- Driver's License + Dropdown -->
+      <li>
+        <a href="#" class="has-dropdown-mobile">Driver's License <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+        <ul class="mobile-dropdown">
+          <li>
+            <a href="#" class="has-dropdown-mobile">Book online road test <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+            <ul class="mobile-dropdown">
+              <li><a href="#">Class 1</a></li>
+              <li><a href="#">Class 2</a></li>
+              <li><a href="#">Class 3</a></li>
+              <li><a href="#">Class 4</a></li>
+              <li><a href="#">Class 4R</a></li>
+              <li><a href="#">Class 5A</a></li>
+              <li><a href="#">Class 5AR</a></li>
+              <li><a href="#">Class 5B</a></li>
+              <li><a href="#">Class 5BR</a></li>
+              <li><a href="#">Class 6</a></li>
+            </ul>
+
+          </li>
+          
+          <li>
+            <a href="#" class="has-dropdown-mobile">Additional licensing information <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+            <ul class="mobile-dropdown">
+              <li><a href="#">Road test information</a></li>
+              <li><a href="#">Knowledge testing</a></li>
+              <li><a href="#">Change of address</a></li>
+              <li><a href="#">ID cards</a></li>
+              <li><a href="#">Driver's license renewals</a></li>
+              <li><a href="#">License class change</a></li>
+              <li><a href="#">License suspension and reinstatement</a></li>
+              <li><a href="#">Out of Province License Exchanges</a></li>
+              <li><a href="#">License replacement while abroad</a></li>
+              <li><a href="#">Driver's abstract / confirmation letters</a></li>              
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+
+      <!-- Vehicle Registration + Dropdown -->
+      <li>
+        <a href="#" class="has-dropdown-mobile" >Vehicle Registration <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+        <ul class="mobile-dropdown">
+          <li><a href="#">Vehicle Reg 1</a></li>
+          
+          <li><a href="#">Vehicle Reg 2</a></li>
+        </ul>
+      </li>
+      
+
+      <!-- Corporate Registry -->
+      <li><a href="#">Corporate Registry</a></li>
+      
+
+      <!-- Vital Statistics + Dropdown -->      
+      <li>
+        <a href="#" class="has-dropdown-mobile">Vital Statistics <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+        <ul class="mobile-dropdown">
+          <li><a href="#">Vital Statistics 1</a></li>
+          
+          <li><a href="#">Vital Statistics 2</a></li>
+        </ul>
+      </li>
+      
+
+      <!-- Other Services + Dropdown -->
+      <li>
+        <a href="#" class="has-dropdown-mobile">Other Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        
+        <ul class="mobile-dropdown">
+          <li><a href="#">Other Services 1</a></li>
+          
+          <li><a href="#">Other Services 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
 
 </header>
 

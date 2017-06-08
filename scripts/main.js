@@ -360,14 +360,50 @@ jQuery(function($) {
     }));
 
 
-    // Smooth Scroll Instatiation
+    // Smooth Scroll Instantiation
     $('a').smoothScroll();
 
 
-    // Global Header - Dropdown
-    $(".has-dropdown").click( function() {
-      $(".dropdown-menu").slideToggle();
+    // Prevent Header Dropdown Links from Scrolling to Top to Page
+    $("header a").click(function(e) {
+      e.preventDefault();
     });
+
+
+    // Global Header - Dropdown
+    $(".has-dropdown").click(function() {
+
+      // Get the id of the clicked element and match it with the dropdown content
+      var id = $(this).attr("id");
+      var dropdown = "#" + id + "-dropdown";
+
+
+      // If menu is already open
+      if ($(".dropdown-menu").hasClass("is-open")) {
+        
+        // Get the id of the open dropdown
+        var openDropdown = "#" + $(".dropdown-content.is-open").attr("id");
+        
+        // If element clicked is same as opened
+        if (dropdown === openDropdown) {
+          $(".dropdown-menu").slideUp().removeClass("is-open");
+          $(dropdown).hide().removeClass("is-open");
+        }
+
+        // If element clicked is not the same as the opened one
+        else {
+          $(openDropdown).hide().removeClass("is-open");
+          $(dropdown).show().addClass("is-open");
+        }
+      }
+
+      // If menu is closed
+      else {
+        $(".dropdown-menu").slideDown().addClass("is-open");
+        $(dropdown).show().addClass("is-open");
+      }
+    });
+
 
 
     // Homepage Testimonial Carousel
@@ -378,6 +414,19 @@ jQuery(function($) {
     });
 
 
+    // Mobile Navigation Trigger
+    $("#mobile-menu-trigger").click(function() {
+      $(".mobile-nav").animate({right: '0'});
+    });
+
+    $("#mobile-menu-close").click(function() {
+      $(".mobile-nav").animate({right: '-300'});
+    });
+
+    // Mobile Navigation Dropdown Trigger
+    $(".has-dropdown-mobile").click(function() {
+      $(this).siblings('ul.mobile-dropdown').slideToggle();
+    });
 
 
 });

@@ -3274,13 +3274,25 @@ h4 {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 .vertical-align {
   position: relative;
   top: 45%;
   transform: translateY(-50%);
 }
+.mobile-show {
+  display: block;
+}
 @media screen and (max-width: 768px) {
   .mobile-hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-show {
     display: none;
   }
 }
@@ -3373,6 +3385,9 @@ header .header-nav {
   background: #fff;
   border-bottom: 2px solid #eee;
 }
+header .header-nav .in-out-logo {
+  min-width: 200px;
+}
 header .header-nav nav {
   position: relative;
   top: 21px;
@@ -3397,6 +3412,11 @@ header .header-nav i {
   color: #9f9f9f;
   font-weight: normal;
 }
+header .header-nav #mobile-menu-trigger {
+  position: relative;
+  text-align: right;
+  top: 12px;
+}
 header .dropdown-menu {
   position: absolute;
   display: none;
@@ -3405,6 +3425,9 @@ header .dropdown-menu {
   padding: 30px 0 50px 0;
   font-size: 14px;
   z-index: 100;
+}
+header .dropdown-menu .dropdown-content {
+  display: none;
 }
 header .dropdown-menu p {
   width: 100%;
@@ -3421,6 +3444,70 @@ header .dropdown-menu li {
 }
 header .dropdown-menu a:hover {
   text-decoration: underline;
+}
+header .mobile-nav {
+  position: fixed;
+  right: 0px;
+  background: white;
+  top: 0;
+  bottom: 0;
+  padding: 15px 0;
+  z-index: 100;
+  width: 300px;
+  right: -300px;
+}
+header .mobile-nav li a {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  transition: all 1s ease;
+}
+header .mobile-nav li a:hover {
+  opacity: 0.7;
+}
+header .mobile-nav li a i {
+  font-size: 10px;
+  position: relative;
+  top: -2px;
+  left: 3px;
+}
+header .mobile-nav > ul > li {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+header .mobile-nav > ul > li > a {
+  padding: 10px 20px 15px;
+}
+header .mobile-nav .mobile-dropdown {
+  display: none;
+}
+header .mobile-nav .mobile-dropdown > li > a {
+  color: #666;
+  font-size: 15px;
+  border-top: 1px solid #ccc;
+  padding: 10px 20px 10px 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header .container {
+    min-width: 100%;
+  }
+  header .header-nav a {
+    font-size: 12px;
+  }
+  header .header-nav li {
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .mobile-nav {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .dropdown-menu {
+    display: none !important;
+  }
 }
 footer {
   width: 100%;

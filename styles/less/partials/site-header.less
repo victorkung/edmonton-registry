@@ -1,6 +1,7 @@
 header {
   width: 100%;
 
+
   .top-line, .header-nav {
     padding: 15px 0;
   }
@@ -75,6 +76,10 @@ header {
     background: #fff;
     border-bottom: 2px solid #eee;
 
+    .in-out-logo {
+      min-width: 200px;
+    }
+
     nav {
       position: relative;
       top: 21px;
@@ -104,6 +109,11 @@ header {
       font-weight: normal;
     }
 
+    #mobile-menu-trigger {
+      position: relative;
+      text-align: right;
+      top: 12px;
+    }
   }
 
   .dropdown-menu {
@@ -114,6 +124,10 @@ header {
     padding: 30px 0 50px 0;
     font-size: 14px;
     z-index: 100;
+
+    .dropdown-content {
+      display: none;
+    }
 
     p {
       width: 100%;
@@ -136,8 +150,90 @@ header {
     }
   }
 
+  .mobile-nav {
+    position: fixed;
+    right: 0px;
+    background: white;
+    top: 0;
+    bottom: 0;
+    padding: 15px 0;
+    z-index: 100;
+    width: 300px;
+    right: -300px;
+
+    
+    // Base styling for mobile nav elements
+    li a {
+      display: inline-block;
+      width: 100%;
+      font-size: 16px;
+      color: #333;
+      transition: all 1s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      i {
+        font-size: 10px;
+        position: relative;
+        top: -2px;
+        left: 3px;
+      }
+    }
+
+    // Styling for first-level elements
+    > ul > li {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 5px;
+      
+      > a {
+        padding: 10px 20px 15px;
+      }
+    }
+
+    // Styling for mobile nav dropdown
+    .mobile-dropdown {
+      display: none;
+
+      > li  > a {
+        color: #666;
+        font-size: 15px;
+        border-top: 1px solid #ccc;
+        padding: 10px 20px 10px 30px;
+      }
+    }
+
+    .inner-dropdown {
+    }
+  }
+
 }
 
-@media screen and (max-widht: 768px) {
 
+// Overrides Container Behavior to Give Header Elements More Width
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    .container {
+      min-width: 100%;
+    }
+    .header-nav a {
+      font-size: 12px;
+    }
+    .header-nav li {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .mobile-nav {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .dropdown-menu {
+    display: none !important;
+  }
 }

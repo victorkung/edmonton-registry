@@ -5,9 +5,8 @@
     <div class="container">
       <div class="col-xs-6 col-sm-6">
         <a href="#locations" class="icons"><img src="images/header/icon_googlemaps.png" alt="google maps icon" width="40"></a>
-
-        <a href="" class="icons"><img src="images/header/icon_phone.png" alt="phone icon" width="35"></a>
-        <a href="tel:1-888-919-7623" class="phone-number mobile-hide">1 (888) 919-7623</a>
+        <a href="tel:18889197623"  class="icons"><img src="images/header/icon_phone.png" alt="phone icon" width="35"></a>
+        <a href="tel:18889197623" class="phone-number mobile-hide">1 (888) 919-7623</a>
       </div>
       
       <div class="col-xs-6 col-sm-6">
@@ -24,7 +23,7 @@
   <div class="header-nav row">
     <div class="container">
       <div class="col-xs-6 col-sm-3">
-        <img src="images/header/in-out-logo.png" alt="In and Out Logo" class="in-out-logo" width="200">
+        <img src="images/header/in-out-logo.png" alt="In and Out Logo" class="in-out-logo" width="225">
       </div>
       <div class="col-xs-6 col-sm-9">
 
@@ -42,6 +41,8 @@
 
             <li><a href="#">Corporate Registry</a></li>
             
+            <li><a href="#">Forms</a></li>
+
             <li class="has-dropdown" id="vital-stats">
               <a href="#">Vital Statistics <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             </li>
@@ -287,6 +288,10 @@
       <!-- Corporate Registry -->
       <li><a href="#">Corporate Registry</a></li>
       
+
+      <!-- Forms -->
+      <li><a href="#">Forms</a></li>
+
 
       <!-- Vital Statistics + Dropdown -->      
       <li>

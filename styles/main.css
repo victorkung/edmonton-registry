@@ -3351,33 +3351,33 @@ header .search-form {
 header .search-form input {
   border-radius: 3px;
   border: 0;
-  width: 150px;
-  font-size: 12px;
+  width: 160px;
+  font-size: 14px;
   padding: 10px 10px 10px 35px;
   background-color: rgba(30, 166, 208, 0.5);
   background-image: url('../images/header/icon_search.png');
   background-repeat: no-repeat;
   background-size: 20px;
-  background-position: 5px 6px;
+  background-position: 7px 9px;
 }
 header ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  font-size: 14px;
+  font-size: 15px;
   color: white;
 }
 header ::-moz-placeholder {
   /* Firefox 19+ */
-  font-size: 14px;
+  font-size: 15px;
   color: white;
 }
 header :-ms-input-placeholder {
   /* IE 10+ */
-  font-size: 14px;
+  font-size: 15px;
   color: white;
 }
 header :-moz-placeholder {
   /* Firefox 18- */
-  font-size: 14px;
+  font-size: 15px;
   color: white;
 }
 header .header-nav {
@@ -3488,7 +3488,7 @@ header .mobile-nav .mobile-dropdown > li > a {
   border-top: 1px solid #ccc;
   padding: 10px 20px 10px 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   header .container {
     min-width: 100%;
   }
@@ -3503,6 +3503,18 @@ header .mobile-nav .mobile-dropdown > li > a {
   header .mobile-nav {
     display: none !important;
   }
+  header {
+    position: fixed;
+    z-index: 1000;
+  }
+  main {
+    margin-top: 175px;
+  }
+}
+@media screen and (max-width: 850px) {
+  header .header-nav a {
+    font-size: 11px;
+  }
 }
 @media screen and (max-width: 768px) {
   header .dropdown-menu {
@@ -3511,6 +3523,7 @@ header .mobile-nav .mobile-dropdown > li > a {
 }
 footer {
   width: 100%;
+  background: #11678c;
 }
 footer .footer-nav {
   background: #11678c;
@@ -3553,7 +3566,8 @@ footer .footer-bottom cite {
 }
 @media screen and (max-width: 768px) {
   footer .footer-nav {
-    text-align: center;
+    max-width: 225px;
+    margin: 0 auto;
   }
   footer .footer-nav .footer-col {
     margin-bottom: 50px;
@@ -3595,6 +3609,7 @@ footer .footer-bottom cite {
 .home .post-hero .right-col .btn-orange {
   padding-left: 60px;
   padding-right: 60px;
+  margin-bottom: 30px;
 }
 .home .locations {
   color: white;
@@ -3761,5 +3776,13 @@ footer .footer-bottom cite {
   .home .post-hero .left-col a {
     margin-right: 0 !important;
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home .post-hero .right-col {
+    float: right;
+  }
+  .home .post-hero .right-col .btn-orange {
+    margin-bottom: 0px;
   }
 }

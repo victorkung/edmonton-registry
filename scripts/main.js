@@ -266,7 +266,7 @@ jQuery(function($) {
         var opts, $scroller, speed, delta;
         var explicitOffset = getExplicitOffset(options);
         var scrollTargetOffset = {};
-        var scrollerOffset = 0;
+        var scrollerOffset = -100;
         var offPos = 'offset';
         var scrollDir = 'scrollTop';
         var aniProps = {};
@@ -410,7 +410,9 @@ jQuery(function($) {
     $('.testimonial-slider').slick({
       prevArrow: false,
       nextArrow: false,
-      dots: true
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 6000
     });
 
 

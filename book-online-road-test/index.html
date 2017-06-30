@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Book Online Road Test | Edmonton, Alberta Registry Offices, Drivers License Testing, & Online Alberta Registry Services</title>
+  <meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <meta charset=utf-8 />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="description" content="Edmonton, Alberta Registry Offices, Drivers License Testing, & Online Alberta Registry Services" />
+  <meta name="keywords" content="Edmonton, Alberta Registry Offices, Drivers License Testing, & Online Alberta Registry Services" />
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Book Online Road Test | Edmonton, Alberta Registry Offices, Drivers License Testing, & Online Alberta Registry Services" >
+  <meta property="og:description" content="Edmonton, Alberta Registry Offices, Drivers License Testing, & Online Alberta Registry Services" >
+
+  <link rel="stylesheet" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/main.min.css?request=true">
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+
+  <script src="../scripts/plugins/modernizr.min.js"></script>
+
+</head>
+
+
+
+<body class="book-online-road-test">
+
+<!--#include virtual="../shtml/site-header.shtml"  -->
+
+<main class="main-content">
+
+  <section class="">
+        
+    <h1>Online Road Test Booking</h1>
+
+    <h2>Step 1: Choose Available Booking</h2>
+    <p>Select type of Road Test</p>
+
+    <form name="frmBooking" id="frmBooking" action="https://www.edmontonregistry.com/drivers-license/online-road-test-booking.html" method="post">
+ 
+      <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="1" onchange="javascript:cmdLoadAvailableTimeSlots();">
+      <label for="">Class 1 ($176.15) - Professional Driver's Licence</label>
+
+      <br>
+
+      <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="2" onchange="javascript:cmdLoadAvailableTimeSlots();">
+      <label>Class 2 ($141.50) - School Bus Driver's Licence</label>
+      
+      <br>
+      
+      <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="4" onchange="javascript:cmdLoadAvailableTimeSlots();">
+      Class 3 ($141.50) - Commercial Driver's Licence
+
+      <br>
+
+      <span id="spanNextAvailableSpot" style="color: #0063BF; font-weight:600;">Next available appointment is 10:00 AM on Jul 4 (Tuesday) at South Side Office 9941-63 Ave.</span>
+      
+      <br>
+      
+      Use dropdowns for more options.
+
+      <br>
+
+      Location:
+      
+      <select name="LocationID" id="LocationID" onchange="javascript:cmdLoadAvailableTimeSlots();">
+        <option value="0"> -- any location -- </option>
+        <option value="1">North Central Office 12804-82 St.</option>
+        <option value="3">North East Office 13058-50 St.</option>
+        <option value="2">South Side Office 9941-63 Ave.</option>
+      </select>
+
+      <br>
+  
+      Date:
+
+      <select name="BookingDateDropdown" id="BookingDateDropdown" onchange="cmdLoadAvailableTimeSlots();">
+        <option value="2017-07-04">Jul 4 (Tuesday)</option>
+        <option value="2017-07-05">Jul 5 (Wednesday)</option>
+        <option value="2017-07-06">Jul 6 (Thursday)</option>
+        <option value="2017-07-07">Jul 7 (Friday)</option>
+        <option value="2017-07-08">Jul 8 (Saturday)</option>
+        <option value="2017-07-10">Jul 10 (Monday)</option>
+
+      </select>
+
+      <br>
+
+      Time:
+      <select name="BookingDateTimeDropdown" id="BookingDateTimeDropdown">
+        <option value="07/04/2017 10:00 AM-2-4">10:00 AM - South Side Office 9941-63 Ave. </option>
+        <option value="07/04/2017 12:30 PM-2-4">12:30 PM - South Side Office 9941-63 Ave. </option>
+        <option value="07/04/2017 01:00 PM-2-4">1:00 PM - South Side Office 9941-63 Ave. </option>
+        <option value="07/04/2017 01:30 PM-2-4">1:30 PM - South Side Office 9941-63 Ave. </option>
+        <option value="07/04/2017 02:00 PM-2-4">2:00 PM - South Side Office 9941-63 Ave. </option>
+      </select>
+
+      <br>
+ 
+      <input type="button" name="btnSubmit" value="Book Road Test" onclick="cmdSave();">
+    
+    </form>
+
+  </section>
+
+</main>
+
+
+<!--#include virtual="../shtml/site-footer.shtml" -->
+
+<!--[if lt IE 9]>
+  <script src="../scripts/_ie-shims/selectivizr-min.js"></script>
+  <script src="../scripts/_ie-shims/es5-shim.js"></script>
+  <script src="../scripts/_ie-shims/json3.min.js"></script>
+<![endif]-->
+
+<script src="../scripts/package.js"></script>
+
+<!-- Slick Carousel -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+</body>
+</html>

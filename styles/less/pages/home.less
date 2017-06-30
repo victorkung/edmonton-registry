@@ -1,18 +1,17 @@
 .home {
+
+
+  // Hero Section
   .hero {
     width: 100%;
-    background: url('../images/home/home-hero.jpg') center center no-repeat;
+    background-image: url('../images/home/home-hero.jpg');
     background-size: cover;
-    height: 700px;
-    color: white;
 
     h1 {
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 16px;
-      font-weight: 500;
       margin-bottom: 40px;
     }
 
@@ -22,6 +21,8 @@
 
   }
 
+
+  // Post Hero
   .post-hero {
     padding: 50px 0;
 
@@ -37,17 +38,19 @@
     }
 
     .right-col {
+      float: right;
       text-align: right;
 
       .btn-orange {
         padding-left: 60px;
         padding-right: 60px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
       }
     }
-
   }
 
+
+  // Locations Section
   .locations {
     color: white;
     text-align: center;
@@ -73,6 +76,8 @@
     }
   }
 
+
+  // Orange Callout
   .orange-callout {
     color: white;
     text-align: center;
@@ -88,6 +93,8 @@
     }
   }
 
+
+  // Service Offerings
   .service-offerings {
     padding: 100px 0;
     text-align: center;
@@ -123,79 +130,12 @@
     }
   }  
 
-  .two-col-layout {
-    color: white;
-    height: 500px;
-    clear: both;
 
-    .col {
-      float: left;
-      width: 50%;
-      height: 500px;
-    }
+  // Two Column Layout
+  .two-col-layout {
 
     .bg-image {
-      background: url('../images/home/customer_support.jpg') center center no-repeat;
-      background-size: cover;
-    }
-
-    .col-content {
-      padding: 50px;
-      background: #0081b7;
-    }
-
-    h2 {
-      margin-bottom: 25px;
-    }
-
-    img {
-      width: 25px;
-      position: relative;
-      top: 6px;
-      margin-right: 15px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-  }
-
-  .testimonial {
-    padding: 100px 0 50px;
-
-    .testimonial-wrapper {
-      max-width: 1000px; 
-      margin: 0 auto;
-    }
-
-    blockquote {
-      padding: 42.5px;
-      background-image: url('../images/home/quote-icon.png');
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-
-    q {
-      display: block;
-      font-size: 22px;
-      font-style: italic;
-      font-weight: 500;
-      color: #4ba3cb;
-      margin-bottom: 20px;
-    }
-
-    cite {
-      display: block;
-      text-align: right;
-      color: #99999f;
-      font-style: normal;
-      font-size: 18px;
-    }
-
-    .slick-dots {
-      position: relative;
-      bottom: initial;
-      margin-top: 50px;
+      background-image: url('../images/home/customer_support.jpg');
     }
   }
 
@@ -203,27 +143,10 @@
 
 
 // Media Queries
-@media screen and (max-width: 900px) {
-  .home {
-    .two-col-layout { 
-      h2 {
-        font-size: 38px;
-      }
-    }
-  }
-}
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 .home {
-  .hero {
-    text-align: center;
-  }
-
-  .two-col-layout .col {
-    width: 100%;
-  }
-
+  
+  // Post Hero
   .post-hero {
     padding: 50px 0;
 
@@ -231,68 +154,54 @@
       text-align: center;
     }
 
+    .right-col {
+      float: initial;
+
+      .btn-orange {
+        margin-bottom: 30px;
+      }
+    }
+
     .left-col {
       margin-bottom: 25px;
+
+      a { 
+        display: block; 
+        width: 100%;
+
+        &:first-of-type {
+          margin-bottom: 25px;
+        }
+      }
     }
   }
+}
+}
 
+
+@media screen and (max-width: 768px) {
+.home {
+
+  // Locations
   .locations {
     .location-col {
       margin-bottom: 100px;
     }
   }
-
-  .two-col-layout {
-    height: auto;
-
-    .col {
-      height: auto;
-    }
-
-    .bg-image {
-      display: none;
-    }
-  }
-
 }
 }
 
 
-// Media Queries
 @media screen and (max-width: 450px) {
 .home {
-  .hero {
-    .btn-orange {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
 
+  // Post Hero
   .post-hero {
-    .left-col {
-      a { 
-        margin-right: 0 !important; 
-        margin-bottom: 10px;
-      }
+    .left-col a { 
+      margin-right: 0; 
     }
   }
 }
 }
 
-// Media Queries
-@media screen and (min-width: 768px) {
-.home {
-
-  .post-hero {
-    .right-col {
-      float: right;
-
-      .btn-orange {
-        margin-bottom: 0px;
-      }
-    }
-
-  }
-}
-}
 

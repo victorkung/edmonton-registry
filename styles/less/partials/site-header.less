@@ -1,13 +1,13 @@
-header {
+.header {
   width: 100%;
 
   .top-line, .header-nav {
     padding: 15px 0;
   }
 
+  
   // Top Header
   .top-line {
-    min-height: 80px;
     background: #005579;
   }
 
@@ -38,7 +38,7 @@ header {
     top: 5px;
   }
 
-  .search-form input {
+  .search-form input, .search-form button {
     border-radius: 3px;
     border: 0;
     width: 160px;
@@ -49,6 +49,11 @@ header {
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: 7px 9px;
+  }
+
+  .search-form button {
+    font-size: 15px;
+    color: white;
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -69,9 +74,9 @@ header {
   }
 
 
+
   // Header Navigation
   .header-nav {
-    min-height: 90px;
     background: #fff;
     border-bottom: 2px solid #eee;
 
@@ -203,8 +208,6 @@ header {
       }
     }
 
-    .inner-dropdown {
-    }
   }
 
 }
@@ -212,7 +215,7 @@ header {
 
 // Overrides Container Behavior to Give Header Elements More Width
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  header {
+  .header {
     .container {
       min-width: 100%;
     }
@@ -226,10 +229,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  header .mobile-nav {
+  .header .mobile-nav {
     display: none !important;
   }
-  header {
+  .header {
     position: fixed;
     z-index: 1000;
   }
@@ -239,7 +242,7 @@ header {
 }
 
 @media screen and (max-width: 850px) {
-  header {
+  .header {
     .header-nav a {
       font-size: 11px;
     }
@@ -247,7 +250,7 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  header .dropdown-menu {
+  .header .dropdown-menu {
     display: none !important;
   }
 }

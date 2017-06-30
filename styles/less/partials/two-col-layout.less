@@ -1,0 +1,65 @@
+// Two Column Layout
+.two-col-layout {
+  color: white;
+  height: 500px;
+  clear: both;
+
+  .col {
+    float: left;
+    width: 50%;
+    height: 500px;
+  }
+
+  .bg-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .col-content {
+    padding: 50px;
+    background: #0081b7;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  img {
+    width: 25px;
+    position: relative;
+    top: 6px;
+    margin-right: 15px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  // Two Column Layout
+  .two-col-layout { 
+    h2 {
+      font-size: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // Two Column Layout
+  .two-col-layout {
+    height: auto;
+
+    .col {
+      height: auto;
+      width: 100%;
+    }
+
+    .bg-image {
+      height: 400px;
+      display: block;
+    }
+  }
+}

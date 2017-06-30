@@ -4,17 +4,17 @@
       <div class="row">
 
         <div class="footer-col col-xs-12 col-sm-2 social-media-icons">
-          <a href="#"><img src="images/footer/linkedin-icon.png" alt="linkedin" width="30"></a>
-          <a href="#"><img src="images/footer/facebook-icon.png" alt="linkedin" width="30"></a>
-          <a href="#"><img src="images/footer/twitter-icon.png" alt="linkedin" width="30"></a>
+          <a href="#"><img src="/images/footer/linkedin-icon.png" alt="linkedin" width="30"></a>
+          <a href="#"><img src="/images/footer/facebook-icon.png" alt="linkedin" width="30"></a>
+          <a href="#"><img src="/images/footer/twitter-icon.png" alt="linkedin" width="30"></a>
         </div>
         
         <div class="footer-col col-xs-12 col-sm-2">
           <ul>
-            <li><strong><a href="#">ABOUT US</a></strong></li>
+            <li><strong><a href="/edmonton-registry/about/">ABOUT US</a></strong></li>
             <li><a href="#">Who we are</a></li>
             <li><a href="#">Contact us</a></li>
-            <li><a href="#">Jobs</a></li>
+            <li><a href="/edmonton-registry/jobs/">Jobs</a></li>
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Privacy</a></li>
           </ul>
@@ -96,3 +96,28 @@
   </div>
 
 </footer>
+
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 2048911;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<!-- End of LiveChat code -->
+
+
+<!-- Start of Help Scout code  -->
+<script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//in-out-registry.helpscoutdocs.com/"},contact:{enabled:!0,formId:"bc29d860-5de8-11e7-a316-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
+<!-- End of Help Scout code  -->
+
+<!-- Help Scout Configuration -->
+<script>
+  HS.beacon.config({
+    modal: true
+  });
+</script>

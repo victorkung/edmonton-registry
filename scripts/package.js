@@ -380,7 +380,9 @@ jQuery(function($) {
 
 
     // Global Header - Dropdown
-    $(".has-dropdown").click(function() {
+    $(".has-dropdown").click(function(e) {
+
+      e.preventDefault();
 
       // Get the id of the clicked element and match it with the dropdown content
       var id = $(this).attr("id");
@@ -438,6 +440,13 @@ jQuery(function($) {
     $(".has-dropdown-mobile").click(function() {
       $(this).siblings('ul.mobile-dropdown').slideToggle();
     });
+
+    
+    // Help Scout Beacon Initialization
+    $('#beacon-open').click(function() {
+      HS.beacon.open();
+    });
+
 
 
 });

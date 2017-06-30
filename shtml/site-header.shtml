@@ -1,29 +1,32 @@
-<header>
+<div class="header">
 
   <!-- Top Banner -->
   <div class="top-line row">
     <div class="container">
       <div class="col-xs-6 col-sm-6">
-        <a href="#locations" class="icons"><img src="images/header/icon_googlemaps.png" alt="google maps icon" width="40"></a>
-        <a href="tel:18889197623"  class="icons"><img src="images/header/icon_phone.png" alt="phone icon" width="35"></a>
+        <a href="#locations" class="icons"><img src="/images/header/icon_googlemaps.png" alt="google maps icon" width="40"></a>
+        <a href="tel:18889197623"  class="icons"><img src="/images/header/icon_phone.png" alt="phone icon" width="35"></a>
         <a href="tel:18889197623" class="phone-number mobile-hide">1 (888) 919-7623</a>
       </div>
       
       <div class="col-xs-6 col-sm-6">
-        <form action="" class="search-form">
+        <!-- <form action="" class="search-form">
           <input type="text" name="search" placeholder="Search site">
-        </form>
-        <img src="images/header/alberta-logo.png" alt="Alberta Authorized Registry Agent Logo" class="alberta-logo mobile-hide" width="100">
+        </form> -->
+        <div class="search-form">
+          <button id="beacon-open">Search Site</button>
+        </div>
+        <img src="/images/header/alberta-logo.png" alt="Alberta Authorized Registry Agent Logo" class="alberta-logo mobile-hide" width="100">
       </div>
     </div>
-  </div>
+</div>
   
 
   <!-- Header Navigation -->
   <div class="header-nav row">
     <div class="container">
       <div class="col-xs-6 col-sm-3">
-        <img src="images/header/in-out-logo.png" alt="In and Out Logo" class="in-out-logo" width="225">
+        <a href="/"><img src="/images/header/in-out-logo.png" alt="In and Out Logo" class="in-out-logo" width="225"></a>
       </div>
       <div class="col-xs-6 col-sm-9">
 
@@ -54,7 +57,7 @@
         </nav>
 
         <!-- Mobile Menu Trigger -->
-        <a href="#" class="mobile-show" id="mobile-menu-trigger"><img src="images/header/menu-icon.png" alt="" width="35"></a>
+        <a href="#" class="mobile-show" id="mobile-menu-trigger"><img src="/images/header/menu-icon.png" alt="" width="35"></a>
       </div>
     </div>
   </div>
@@ -69,7 +72,7 @@
 
         <!-- Left Column -->
         <div class="col-xs-12 col-sm-5">
-          <p>Book online road test</p>
+          <p><a href="/book-online-road-test/">Book online road test</a></p>
 
           <div class="row">
             <ul class="col-xs-12 col-sm-6">
@@ -236,7 +239,7 @@
 
         <ul class="mobile-dropdown">
           <li>
-            <a href="#" class="has-dropdown-mobile">Book online road test <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="/book-online-road-test/" class="has-dropdown-mobile">Book online road test <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
             <ul class="mobile-dropdown">
               <li><a href="#">Class 1</a></li>
@@ -319,5 +322,5 @@
   </div>
 
 
-</header>
+</div>
 

@@ -38,77 +38,88 @@
 
 <main class="main-content">
 
-  <section class="">
+  <section class="form-wrapper">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-5">
         
-    <h1>Online Road Test Booking</h1>
+          <h1>Online Road Test Booking</h1>
 
-    <h2>Step 1: Choose Available Booking</h2>
-    <p>Select type of Road Test</p>
+          <form name="frmBooking" id="frmBooking" action="https://www.edmontonregistry.com/drivers-license/online-road-test-booking.html" method="post">
 
-    <form name="frmBooking" id="frmBooking" action="https://www.edmontonregistry.com/drivers-license/online-road-test-booking.html" method="post">
- 
-      <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="1" onchange="javascript:cmdLoadAvailableTimeSlots();">
-      <label for="">Class 1 ($176.15) - Professional Driver's Licence</label>
+            <h3>Step 1: Choose Available Booking</h3>
+            <p>Select type of Road Test:</p>
+       
+            <ul class="radio-wrapper">
+              <li>
+                <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="1" onchange="javascript:cmdLoadAvailableTimeSlots();">
+                <label for="">Class 1 ($176.15) - Professional Driver's Licence</label>
+              </li>
 
-      <br>
+              <li>
+            <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="2" onchange="javascript:cmdLoadAvailableTimeSlots();">
+                <label>Class 2 ($141.50) - School Bus Driver's Licence</label>
+              </li>
 
-      <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="2" onchange="javascript:cmdLoadAvailableTimeSlots();">
-      <label>Class 2 ($141.50) - School Bus Driver's Licence</label>
-      
-      <br>
-      
-      <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="4" onchange="javascript:cmdLoadAvailableTimeSlots();">
-      Class 3 ($141.50) - Commercial Driver's Licence
+              <li>
+                <input id="RoadTestTypeID8" type="radio" name="RoadTestTypeID" value="4" onchange="javascript:cmdLoadAvailableTimeSlots();">
+                <label>Class 3 ($141.50) - Commercial Driver's Licence</label>
+              </li>
+            </ul>
 
-      <br>
+            <span id="spanNextAvailableSpot">Next available appointment is 10:00 AM on Jul 4 (Tuesday) at South Side Office 9941-63 Ave.</span>
+                        
+            <p>Use dropdowns for more options.</p>
 
-      <span id="spanNextAvailableSpot" style="color: #0063BF; font-weight:600;">Next available appointment is 10:00 AM on Jul 4 (Tuesday) at South Side Office 9941-63 Ave.</span>
-      
-      <br>
-      
-      Use dropdowns for more options.
+            <ul class="select-wrapper">
+              <li>
+                <label>Location:</label>
+                
+                <select name="LocationID" id="LocationID" onchange="javascript:cmdLoadAvailableTimeSlots();">
+                  <option value="0"> -- any location -- </option>
+                  <option value="1">North Central Office 12804-82 St.</option>
+                  <option value="3">North East Office 13058-50 St.</option>
+                  <option value="2">South Side Office 9941-63 Ave.</option>
+                </select>
+              </li>
 
-      <br>
+              <li>
+                <label>Date:</label>
 
-      Location:
-      
-      <select name="LocationID" id="LocationID" onchange="javascript:cmdLoadAvailableTimeSlots();">
-        <option value="0"> -- any location -- </option>
-        <option value="1">North Central Office 12804-82 St.</option>
-        <option value="3">North East Office 13058-50 St.</option>
-        <option value="2">South Side Office 9941-63 Ave.</option>
-      </select>
+                <select name="BookingDateDropdown" id="BookingDateDropdown" onchange="cmdLoadAvailableTimeSlots();">
+                  <option value="2017-07-04">Jul 4 (Tuesday)</option>
+                  <option value="2017-07-05">Jul 5 (Wednesday)</option>
+                  <option value="2017-07-06">Jul 6 (Thursday)</option>
+                  <option value="2017-07-07">Jul 7 (Friday)</option>
+                  <option value="2017-07-08">Jul 8 (Saturday)</option>
+                  <option value="2017-07-10">Jul 10 (Monday)</option>
 
-      <br>
-  
-      Date:
+                </select>
+              </li>      
 
-      <select name="BookingDateDropdown" id="BookingDateDropdown" onchange="cmdLoadAvailableTimeSlots();">
-        <option value="2017-07-04">Jul 4 (Tuesday)</option>
-        <option value="2017-07-05">Jul 5 (Wednesday)</option>
-        <option value="2017-07-06">Jul 6 (Thursday)</option>
-        <option value="2017-07-07">Jul 7 (Friday)</option>
-        <option value="2017-07-08">Jul 8 (Saturday)</option>
-        <option value="2017-07-10">Jul 10 (Monday)</option>
+              <li>
+                <label>Time:</label>
+                <select name="BookingDateTimeDropdown" id="BookingDateTimeDropdown">
+                  <option value="07/04/2017 10:00 AM-2-4">10:00 AM - South Side Office 9941-63 Ave. </option>
+                  <option value="07/04/2017 12:30 PM-2-4">12:30 PM - South Side Office 9941-63 Ave. </option>
+                  <option value="07/04/2017 01:00 PM-2-4">1:00 PM - South Side Office 9941-63 Ave. </option>
+                  <option value="07/04/2017 01:30 PM-2-4">1:30 PM - South Side Office 9941-63 Ave. </option>
+                  <option value="07/04/2017 02:00 PM-2-4">2:00 PM - South Side Office 9941-63 Ave. </option>
+                </select>
+              </li>
+         
+              <a href="/edmonton-registry/book-online-road-test/index-2.html" class="btn btn-orange">Book Road Test</a>
 
-      </select>
+              <!-- <input type="button" name="btnSubmit" value="Book Road Test" onclick="cmdSave();" class="btn btn-orange"> -->
+              
+            </div>
+          
+          </form>
 
-      <br>
-
-      Time:
-      <select name="BookingDateTimeDropdown" id="BookingDateTimeDropdown">
-        <option value="07/04/2017 10:00 AM-2-4">10:00 AM - South Side Office 9941-63 Ave. </option>
-        <option value="07/04/2017 12:30 PM-2-4">12:30 PM - South Side Office 9941-63 Ave. </option>
-        <option value="07/04/2017 01:00 PM-2-4">1:00 PM - South Side Office 9941-63 Ave. </option>
-        <option value="07/04/2017 01:30 PM-2-4">1:30 PM - South Side Office 9941-63 Ave. </option>
-        <option value="07/04/2017 02:00 PM-2-4">2:00 PM - South Side Office 9941-63 Ave. </option>
-      </select>
-
-      <br>
- 
-      <input type="button" name="btnSubmit" value="Book Road Test" onclick="cmdSave();">
-    
-    </form>
+        </div>
+      </div>
+    </div>
 
   </section>
 

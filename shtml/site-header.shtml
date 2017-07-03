@@ -72,7 +72,7 @@
 
         <!-- Left Column -->
         <div class="col-xs-12 col-sm-5">
-          <p><a href="/book-online-road-test/">Book online road test</a></p>
+          <p><a href="/edmonton-registry/book-online-road-test/">Book online road test</a></p>
 
           <div class="row">
             <ul class="col-xs-12 col-sm-6">
@@ -239,7 +239,7 @@
 
         <ul class="mobile-dropdown">
           <li>
-            <a href="/book-online-road-test/" class="has-dropdown-mobile">Book online road test <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="/edmonton-registry/book-online-road-test/" class="has-dropdown-mobile">Book online road test <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
             <ul class="mobile-dropdown">
               <li><a href="#">Class 1</a></li>

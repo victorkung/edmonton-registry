@@ -57,7 +57,7 @@
         </nav>
 
         <!-- Mobile Menu Trigger -->
-        <a href="#" class="mobile-show" id="mobile-menu-trigger"><img src="/images/header/menu-icon.png" alt="" width="35"></a>
+        <a href="#" class="mobile-show" id="mobile-menu-trigger"><img src="/edmonton-registry/images/header/menu-icon.png" alt="" width="35"></a>
       </div>
     </div>
   </div>

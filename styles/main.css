@@ -3747,8 +3747,7 @@ footer .footer-bottom cite {
 .form-wrapper ul.select-wrapper select {
   border: 0;
   font-size: 14px;
-  background-color: rgba(15, 125, 164, 0.7);
-  color: #fff;
+  background: white;
   height: 35px;
   width: 350px;
   max-width: 100%;

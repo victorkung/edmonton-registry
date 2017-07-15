@@ -92,7 +92,7 @@
   
     li {
       display: inline;
-      margin-right: 15px;
+      margin-right: 50px;
     }
 
     a {
@@ -123,11 +123,14 @@
   .dropdown-menu {
     position: absolute;
     display: none;
-    width: 100%;
+    top: 58px;
+    left: 250px;
+    width: 450px;
     background: white;
     padding: 30px 0 50px 0;
     font-size: 14px;
     z-index: 100;
+    text-align: left;
 
     .dropdown-content {
       display: none;
@@ -137,7 +140,7 @@
       width: 100%;
       border-bottom: 2px solid #666;
       font-weight: bold;
-      padding: 0px 10px 7.5px 10px;
+      padding: 10px;
     }
 
     ul {
@@ -145,8 +148,9 @@
     }
 
     li {
+      display: block;
       list-style: none;
-      margin-top: 12.5px;
+      margin-top: 17.5px;
     }
 
     a:hover {
@@ -219,12 +223,6 @@
     .container {
       min-width: 100%;
     }
-    .header-nav a {
-      font-size: 12px;
-    }
-    .header-nav li {
-      margin-right: 5px;
-    }
   }
 }
 
@@ -238,14 +236,6 @@
   }
   main {
     margin-top: 175px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .header {
-    .header-nav a {
-      font-size: 11px;
-    }
   }
 }
 

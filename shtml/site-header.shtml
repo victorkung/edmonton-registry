@@ -4,7 +4,7 @@
   <div class="top-line row">
     <div class="container">
       <div class="col-xs-6 col-sm-6">
-        <a href="#locations" class="icons"><img src="/edmonton-registry/images/header/icon_googlemaps.png" alt="google maps icon" width="40"></a>
+        <a href="/edmonton-registry/#locations" class="icons"><img src="/edmonton-registry/images/header/icon_googlemaps.png" alt="google maps icon" width="40"></a>
         <a href="tel:18889197623"  class="icons"><img src="/edmonton-registry/images/header/icon_phone.png" alt="phone icon" width="35"></a>
         <a href="tel:18889197623" class="phone-number mobile-hide">1 (888) 919-7623</a>
       </div>
@@ -26,33 +26,47 @@
   <div class="header-nav row">
     <div class="container">
       <div class="col-xs-6 col-sm-3">
-        <a href="/"><img src="/edmonton-registry/images/header/in-out-logo.png" alt="In and Out Logo" class="in-out-logo" width="225"></a>
+        <a href="/edmonton-registry/"><img src="/edmonton-registry/images/header/in-out-logo.png" alt="In and Out Logo" class="in-out-logo" width="225"></a>
       </div>
       <div class="col-xs-6 col-sm-9">
 
         <!-- Desktop Navigation Menu -->
         <nav class="mobile-hide">
           <ul>
-            <li class="has-dropdown" id="drivers-license">
-              <a href="#">Driver's License <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-            </li>
+            <li class="has-dropdown" id="registry-services">
+              <a href="#">Registry Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             
-            <li class="has-dropdown" id="vehicle-reg">
-              <a href="#">Vehicle Registration <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            </li>
+              <!-- Desktop Dropdown Menu -->
+              <div class="dropdown-menu">
+                <div class="container-fluid">
 
-            <li><a href="#">Corporate Registry</a></li>
+                  <!-- Registry Services -->
+                  <div class="row dropdown-content" id="registry-services-dropdown">
+
+                    <div class="col-xs-offset-1 col-xs-10">
+                      <p><a href="#">Registry Services</a></p>
+
+                      <div class="row">
+                        <ul class="col-xs-12">
+                            <li><a href="http://services.edmontonregistry.com/collection/1-drivers-licensing" target="_blank">Driver's Licensing</a></li>
+                            <li><a href="http://services.edmontonregistry.com/collection/18-vehicle-registration" target="_blank">Vehicle Registration</a></li>
+                            <li><a href="http://services.edmontonregistry.com/collection/26-searches-liens" target="_blank">Searches & Liens</a></li>
+                            <li><a href="http://services.edmontonregistry.com/collection/15-other-services" target="_blank">Other Services</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
             
             <li><a href="#">Forms</a></li>
 
-            <li class="has-dropdown" id="vital-stats">
-              <a href="#">Vital Statistics <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            </li>
+            <li><a href="#">Pricing</a></li>
 
-            <li class="has-dropdown" id="other-services">
-              <a href="#">Other Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            </li>
+            <li><a href="/edmonton-registry/#locations">Locations</a></li>
           </ul>
         </nav>
 
@@ -63,166 +77,6 @@
   </div>
 
 
-  <!-- Desktop Dropdown Menu -->
-  <div class="dropdown-menu">
-    <div class="container">
-
-      <!-- Drivers License -->
-      <div class="row dropdown-content" id="drivers-license-dropdown">
-
-        <!-- Left Column -->
-        <div class="col-xs-12 col-sm-5">
-          <p><a href="/edmonton-registry/book-online-road-test/">Book online road test</a></p>
-
-          <div class="row">
-            <ul class="col-xs-12 col-sm-6">
-              <li><a href="#">Class 1</a></li>
-              <li><a href="#">Class 2</a></li>
-              <li><a href="#">Class 3</a></li>
-              <li><a href="#">Class 4</a></li>
-              <li><a href="#">Class 4R</a></li>
-            </ul>
-            <ul class="col-xs-12 col-sm-6">
-              <li><a href="#">Class 5A</a></li>
-              <li><a href="#">Class 5AR</a></li>
-              <li><a href="#">Class 5B</a></li>
-              <li><a href="#">Class 5BR</a></li>
-              <li><a href="#">Class 6</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-xs-12 col-sm-7">
-          <p>Additional licensing information</p>
-
-         <div class="row">
-            <ul class="col-xs-12 col-sm-6">
-              <li><a href="#">Road test information</a></li>
-              <li><a href="#">Knowledge testing</a></li>
-              <li><a href="#">Change of address</a></li>
-              <li><a href="#">ID cards</a></li>
-              <li><a href="#">Driver's license renewals</a></li>
-            </ul>
-            <ul class="col-xs-12 col-sm-6">
-              <li><a href="#">License class change</a></li>
-              <li><a href="#">License suspension and reinstatement</a></li>
-              <li><a href="#">Out of Province License Exchanges</a></li>
-              <li><a href="#">License replacement while abroad</a></li>
-              <li><a href="#">Driver's abstract / confirmation letters</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Vehicle Registration Dropdown -->
-      <div class="row dropdown-content" id="vehicle-reg-dropdown">
-
-        <!-- Left Column -->
-        <div class="col-xs-12 col-sm-5">
-          <p>Vehicle Registration Left Column</p>
-
-          <div class="row">
-            <ul class="col-xs-12">
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-xs-12 col-sm-7">
-          <p>Vehicle Registration Right Column</p>
-
-         <div class="row">
-            <ul class="col-xs-12">
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Vital Stats Dropdown -->
-      <div class="row dropdown-content" id="vital-stats-dropdown">
-
-        <!-- Left Column -->
-        <div class="col-xs-12 col-sm-5">
-          <p>Vital Statistics Left Column</p>
-
-          <div class="row">
-            <ul class="col-xs-12">
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-xs-12 col-sm-7">
-          <p>Vital Statistics Right Column</p>
-
-         <div class="row">
-            <ul class="col-xs-12">
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Other Services Dropdown -->
-      <div class="row dropdown-content" id="other-services-dropdown">
-
-        <!-- Left Column -->
-        <div class="col-xs-12 col-sm-5">
-          <p>Other Services Left Column</p>
-
-          <div class="row">
-            <ul class="col-xs-12">
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-xs-12 col-sm-7">
-          <p>Other Services Right Column</p>
-
-         <div class="row">
-            <ul class="col-xs-12">
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link </a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
 
 
   <!-- Mobile Navigation Menu -->
@@ -233,91 +87,29 @@
       </li>
       
 
-      <!-- Driver's License + Dropdown -->
+      <!-- Registry Services -->
       <li>
-        <a href="#" class="has-dropdown-mobile">Driver's License <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        <a href="#" class="has-dropdown-mobile">Registry Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
         <ul class="mobile-dropdown">
-          <li>
-            <a href="/edmonton-registry/book-online-road-test/" class="has-dropdown-mobile">Book online road test <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-            <ul class="mobile-dropdown">
-              <li><a href="#">Class 1</a></li>
-              <li><a href="#">Class 2</a></li>
-              <li><a href="#">Class 3</a></li>
-              <li><a href="#">Class 4</a></li>
-              <li><a href="#">Class 4R</a></li>
-              <li><a href="#">Class 5A</a></li>
-              <li><a href="#">Class 5AR</a></li>
-              <li><a href="#">Class 5B</a></li>
-              <li><a href="#">Class 5BR</a></li>
-              <li><a href="#">Class 6</a></li>
-            </ul>
-
-          </li>
-          
-          <li>
-            <a href="#" class="has-dropdown-mobile">Additional licensing information <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-            <ul class="mobile-dropdown">
-              <li><a href="#">Road test information</a></li>
-              <li><a href="#">Knowledge testing</a></li>
-              <li><a href="#">Change of address</a></li>
-              <li><a href="#">ID cards</a></li>
-              <li><a href="#">Driver's license renewals</a></li>
-              <li><a href="#">License class change</a></li>
-              <li><a href="#">License suspension and reinstatement</a></li>
-              <li><a href="#">Out of Province License Exchanges</a></li>
-              <li><a href="#">License replacement while abroad</a></li>
-              <li><a href="#">Driver's abstract / confirmation letters</a></li>              
-            </ul>
-          </li>
+          <li><a href="http://services.edmontonregistry.com/collection/1-drivers-licensing" target="_blank">Driver's Licensing</a></li>
+          <li><a href="http://services.edmontonregistry.com/collection/18-vehicle-registration" target="_blank">Vehicle Registration</a></li>
+          <li><a href="http://services.edmontonregistry.com/collection/26-searches-liens" target="_blank">Searches & Liens</a></li>
+          <li><a href="http://services.edmontonregistry.com/collection/15-other-services" target="_blank">Other Services</a></li>
         </ul>
       </li>
-      
-
-      <!-- Vehicle Registration + Dropdown -->
-      <li>
-        <a href="#" class="has-dropdown-mobile" >Vehicle Registration <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-        <ul class="mobile-dropdown">
-          <li><a href="#">Vehicle Reg 1</a></li>
-          
-          <li><a href="#">Vehicle Reg 2</a></li>
-        </ul>
-      </li>
-      
-
-      <!-- Corporate Registry -->
-      <li><a href="#">Corporate Registry</a></li>
       
 
       <!-- Forms -->
-      <li><a href="#">Forms</a></li>
-
-
-      <!-- Vital Statistics + Dropdown -->      
-      <li>
-        <a href="#" class="has-dropdown-mobile">Vital Statistics <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-        <ul class="mobile-dropdown">
-          <li><a href="#">Vital Statistics 1</a></li>
-          
-          <li><a href="#">Vital Statistics 2</a></li>
-        </ul>
-      </li>
+      <li><a href="#" class="has-dropdown-mobile" >Forms</a></li>
       
 
-      <!-- Other Services + Dropdown -->
-      <li>
-        <a href="#" class="has-dropdown-mobile">Other Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-        
-        <ul class="mobile-dropdown">
-          <li><a href="#">Other Services 1</a></li>
-          
-          <li><a href="#">Other Services 2</a></li>
-        </ul>
-      </li>
+      <!-- Pricing -->
+      <li><a href="#">Pricing</a></li>
+      
+
+      <!-- Locations -->
+      <li><a href="/edmonton-registry/#locations">Locations</a></li>
     </ul>
   </div>
 

@@ -62,9 +62,9 @@
 
             </li>
             
-            <li><a href="#">Forms</a></li>
+            <li><a href="http://services.edmontonregistry.com/collection/110-forms" target="_blank">Forms</a></li>
 
-            <li><a href="#">Pricing</a></li>
+            <li><a href="http://services.edmontonregistry.com/collection/85-pricing" target="_blank">Pricing</a></li>
 
             <li><a href="/edmonton-registry/#locations">Locations</a></li>
           </ul>
@@ -101,11 +101,11 @@
       
 
       <!-- Forms -->
-      <li><a href="#" class="has-dropdown-mobile" >Forms</a></li>
+      <li><a href="http://services.edmontonregistry.com/collection/110-forms" target="_blank">Forms</a></li>
       
 
       <!-- Pricing -->
-      <li><a href="#">Pricing</a></li>
+      <li><a href="http://services.edmontonregistry.com/collection/85-pricing" target="_blank">Pricing</a></li>
       
 
       <!-- Locations -->

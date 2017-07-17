@@ -3391,6 +3391,7 @@ body {
 .header .header-nav {
   background: #fff;
   border-bottom: 2px solid #eee;
+  height: 95px;
 }
 .header .header-nav .in-out-logo {
   min-width: 200px;
@@ -3502,6 +3503,11 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .header .container {
     min-width: 100%;
+  }
+}
+@media screen and (max-width: 1029px) {
+  .header .dropdown-menu {
+    left: 100px;
   }
 }
 @media screen and (min-width: 768px) {

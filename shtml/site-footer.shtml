@@ -4,15 +4,15 @@
       <div class="row">
 
         <div class="footer-col col-xs-12 col-sm-2 social-media-icons">
-          <a href="#"><img src="/edmonton-registry/images/footer/linkedin-icon.png" alt="linkedin" width="30"></a>
-          <a href="#"><img src="/edmonton-registry/images/footer/facebook-icon.png" alt="linkedin" width="30"></a>
-          <a href="#"><img src="/edmonton-registry/images/footer/twitter-icon.png" alt="linkedin" width="30"></a>
+          <a href="#"><img src="/edmonton-registry/images/footer/linkedin-icon.png" alt="linkedin icon" width="30"></a>
+          <a href="#"><img src="/edmonton-registry/images/footer/facebook-icon.png" alt="facebook icon" width="30"></a>
+          <a href="#"><img src="/edmonton-registry/images/footer/twitter-icon.png" alt="twitter icon" width="30"></a>
         </div>
         
         <div class="footer-col col-xs-12 col-sm-2">
           <ul>
-            <li><strong><a href="/edmonton-registry/about/">ABOUT US</a></strong></li>
-            <li><a href="#">Who we are</a></li>
+            <li><strong>ABOUT US</strong></li>
+            <li><a href="/edmonton-registry/about/">Who we are</a></li>
             <li><a href="mailto:hello@edmontonregistry.com">Contact us</a></li>
             <li><a href="/edmonton-registry/jobs/">Jobs</a></li>
             <li><a href="#">Terms of Use</a></li>
@@ -25,7 +25,7 @@
           <div class="row">
             <div class="footer-col col-xs-12 col-sm-4">
               <ul>
-                <li><strong><a href="http://services.edmontonregistry.com/collection/110-forms" target="_blank">ONLINE FORMS</a></strong></li>
+                <li><strong>ONLINE FORMS</strong></li>
                 <li><a href="/edmonton-registry/book-online-road-test/">Road Test Booking</a></li>
                 <li><a href="#">License Plate Renewal</a></li>
                 <li><a href="https://www.edmontonregistry.com/vehicle-registration/vehicle-history-report/online-form-vehicle-information-report.html" target="_blank">Vehicle Information Report</a></li>
@@ -39,7 +39,7 @@
 
             <div class="footer-col col-xs-12 col-sm-4">
               <ul>
-                <li><strong><a href="#">REGISTRY SERVICES</a></strong></li>
+                <li><strong>REGISTRY SERVICES</strong></li>
                 <li><a href="http://services.edmontonregistry.com/collection/1-drivers-licensing" target="_blank">Driver's Licensing</a></li>
                 <li><a href="http://services.edmontonregistry.com/collection/18-vehicle-registration" target="_blank">Vehicle Registration</a></li>
                 <li><a href="http://services.edmontonregistry.com/collection/26-searches-liens" target="_blank">Searches & Liens</a></li>
@@ -49,7 +49,7 @@
 
             <div class="footer-col col-xs-12 col-sm-4">
               <ul>
-                <li><strong><a href="/edmonton-registry/#locations">LOCATIONS</a></strong></li>
+                <li><strong>LOCATIONS</strong></li>
                 <li>
                   <span>North East Registry</span>
                   <br>
